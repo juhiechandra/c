@@ -1,0 +1,20 @@
+<1>Write down a program that will take a student mark as input and
+will convert into corresponding letter grade (hint-:switch).
+
+
+<2>:Determining vowel or consonant(hint-:if else if).
+
+
+<3>Print all odd number and summation of all odd numbers up to n (hint-:loop and if else).
+
+
+<4>Make a bank counter system dividing the person on base of there gender and need like loan(additional if u want - emi calculator) , insurance , deposit or withdrawal (hint-:function and conditional statement ).
+
+
+<5>HCF calculator for 2 numbers (hint-: loop and if).
+
+
+<6>Fibonacci series
+
+
+<7>currency converter / temperature converter.
