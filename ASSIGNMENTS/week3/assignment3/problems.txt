@@ -1,4 +1,4 @@
-<1>Print x^n, where x and n are integers
+<1>Print x^n, where x and n are integers(loop)
 ------------------------------------------------------------------------------------------------
 <2>Write a program in C to display the pattern like right angle triangle using an asterisk. Go to the editor
 
@@ -48,4 +48,21 @@ to the last place.
 ----------------------------------------------------------------------------------------------------
 <9>C Program to calculate a Number raised to the Power of N using Recursion
 ----------------------------------------------------------------------------------------------------
-<10>BUtterfly pattern
+@everyone 
+<10>Butterfly pattern
+------------------------------------------------------------------------------------------------
+
+<11>find Armstrong number up to nth
+
+------------------------------------------------------------------------------------------------
+
+<12>Write a program in C to print all the alphabets using a pointer.(hint ASCII values)
+
+------------------------------------------------------------------------------------------------
+
+<13>swap two numbers using call by reference(pointers)
+sol->(https://codeforwin.org/2017/01/c-program-to-swap-two-numbers-using-call-by-reference.html)
+
+------------------------------------------------------------------------------------------------
+
+<14>Fibonacci using pointer (no idea kaise hoga just a chalange for all of us including me)
