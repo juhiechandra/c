@@ -1,6 +1,6 @@
 #include <stdio.h>
 int fact(int);
-void main()
+int main()
 {
     int i, n;
     float sum = 0;
