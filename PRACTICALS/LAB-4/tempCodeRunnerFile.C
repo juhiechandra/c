@@ -1,23 +1,75 @@
-// rite a C program to input radius of circle from user and find diameter, circumference and area of the given circle using function.
-
 #include <stdio.h>
-double getArea(float x);
-
+#include<math.h>
+int Armstrong(int num);
+int Perfect(int num);
+int Prime(int num);
 int main()
-
 {
+    int num;
+    printf("\nInput any number : ");
+    scanf("%d", &num);
 
-    float area, radius;
+    if (Armstrong(num))
+        printf("%d is an Armstrong Number.\n", num);
+    else
+        printf("%d is not an Armstrong Number.\n", num);
 
-    printf("Enter the radius:\n");
-    scanf("%f", &radius);
-    area = getArea(radius);
+    if (Prime(num))
+        printf("%d is a Prime Number\n", num);
+    else
+        printf("%d is Not a Prime Number\n", num);
 
-    printf("Area of the circle = %.2f sq. units", area);
+    if (Perfect(num))
+        printf("%d is a Perfect Number\n", num);
+    else
+        printf("%d is not a Perfect Number\n", num);
     return 0;
 }
-
-double getArea(float x)
+int Armstrong(int num)
 {
-    return (3.14 * x * x);
+    int Temp, Reminder, Times = 0, sum = 0;
+    Temp = num;
+    while (Temp != 0)
+    {
+        Times = Times + 1;
+        Temp = Temp / 10;
+    }
+
+    for (Temp = num; Temp > 0; Temp = Temp / 10)
+    {
+        Reminder = Temp % 10;
+        sum = sum + pow(Reminder, Times);
+    }
+    if (num == sum)
+        return 1;
+    else
+        return 0;
+}
+int Perfect(int num)
+{
+    int i, sum = 0;
+    for (i = 1; i < num; i++)
+    {
+        if (num % i == 0)
+            sum = sum + i;
+    }
+    if (sum == num)
+        return 1;
+    else
+        return 0;
+}
+int Prime(int num)
+{
+    int i, count = 0;
+    for (i = 2; i <= num / 2; i++)
+    {
+        if (num % i == 0)
+        {
+            count++;
+        }
+    }
+    if (count == 0 && num != 1)
+        return 1;
+    else
+        return 0;
 }
