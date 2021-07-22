@@ -1,31 +1,28 @@
 #include <stdio.h>
-#define N 10
-
+int count_even(int arr[], int arr_size)
+{
+    int even_count = 0;
+    for (int i = 0; i < arr_size; i++)
+    {
+        if (arr[i] % 2 == 0)
+        {
+            even_count++;
+        }
+    }
+    return even_count;
+}
 int main()
 {
-    int a[N], i, even = 0, odd = 0;
+    int n;
+    printf("How many numbers: ");
+    scanf("%d", &n);
 
-    printf("Enter %d integer numbers:\n", N);
-    for (int i = 0; i < N; i++)
-        scanf("%d", &a[i]);
-
-    printf("\n\n Even numbers in the array are \n");
-
-    for (int i = 0; i < N; i++)
+    int arr[n];
+    printf("Enter the numbers: ");
+    for (int i = 0; i < n; i++)
     {
-        if (a[i] % 2 == 0)
-        {
-            printf("%d\t", a[i]);
-        }
+        scanf("%d", &arr[i]);
     }
 
-    printf("\n\n Odd numbers in the array are \n");
-
-    for (int i = 0; i < N; i++)
-    {
-        if (a[i] % 2 != 0)
-        {
-            printf("%d\t", a[i]);
-        }
-    }
+    printf("Total even numbers are: %d", count_even(arr, n));
 }
