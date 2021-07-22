@@ -1,11 +1,31 @@
-// WAP that accepts ‘n’ numbers from keyboard and count how many of those numbers are even numbers using user - defined function.The main() function reads all ‘n’ numbers one by one and at the same time sending them by reference to a called function named ‘int count even()’.The job of the ‘count even’ function is to check the number received by it as even or odd.For every even number received, it should increase a count variable and finally send the value of the count variable to the main() function where it gets printed
+#include <stdio.h>
+#define N 10
 
-#include<stdio.h>
-int counteven(int n);
 int main()
 {
-    int n;
-    int A[n];
-    
-    
+    int a[N], i, even = 0, odd = 0;
+
+    printf("Enter %d integer numbers:\n", N);
+    for (int i = 0; i < N; i++)
+        scanf("%d", &a[i]);
+
+    printf("\n\n Even numbers in the array are \n");
+
+    for (int i = 0; i < N; i++)
+    {
+        if (a[i] % 2 == 0)
+        {
+            printf("%d\t", a[i]);
+        }
+    }
+
+    printf("\n\n Odd numbers in the array are \n");
+
+    for (int i = 0; i < N; i++)
+    {
+        if (a[i] % 2 != 0)
+        {
+            printf("%d\t", a[i]);
+        }
+    }
 }

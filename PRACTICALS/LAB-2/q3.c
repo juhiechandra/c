@@ -38,7 +38,7 @@ int main()
     scanf("%d %d %d", &A, &B, &C);
 
     largest = A > B ? (A > C ? A : C) : (B > C ? B : C);
-
+3
     printf("%d is the largest number.", largest);
 
     return 0;

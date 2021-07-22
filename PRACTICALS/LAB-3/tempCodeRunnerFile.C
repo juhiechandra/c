@@ -18,16 +18,16 @@ int main()
             printf("%d is not a prime number.", n);
     }
 
-    printf("Enter the number till which prime numbers are needed:\n");
-    scanf("%d", &num);
-    for (int i = 2; i <= num; i++)
-    {
+ printf("\nEnter the number till which prime numbers are
+needed: ");
+ scanf("%d",&num);
+ for(int i=2; i<=num; i++){
         if (checkPrime(i))
         {
             printf("%d ", i);
         }
-    }
-    return 0;
+ }
+ return 0;
 }
 int checkPrime(int n)
 {

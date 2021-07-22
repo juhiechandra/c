@@ -4,6 +4,10 @@
         "*.c": "c",
         "Q1.C": "cpp",
         "Q3.C": "cpp",
-        "Q4.C": "cpp"
+        "Q4.C": "cpp",
+        "Q10.C": "cpp",
+        "Q5-A.C": "cpp",
+        "Q5-C.C": "cpp",
+        "Q2.C": "cpp"
     }
 }

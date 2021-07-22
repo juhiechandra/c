@@ -1,27 +1,19 @@
-// Q2.WAP to print Fibonacci series up to ‘n’ terms where n is entered from user.
-
 #include <stdio.h>
 int main()
 {
-    int n, a , b, c, i;
-
-    printf("Enter the number of terms\n");
-    scanf("%d", &n);
-
-    printf("First %d terms of Fibonacci series are:\n", n);
-
-    for (i = 1; i < n; i++)
+    int a, b, c, i, terms;
+    printf("Enter number of terms: ");
+    scanf("%d", &terms);
+    a = 0;
+    b = 1;
+    c = 0;
+    printf("Fibonacci terms: \n");
+    for (i = 1; i <= terms; i++)
     {
-        if (i <= 1)
-            c = i;
-        else
-        {
-            c = a + b;
-            b = c;
-            a = b;
-        }
-        printf("%d\n", c);
+        printf("%d ", c);
+        a = b;
+        b = c;
+        c = a + b;
     }
-
     return 0;
 }
