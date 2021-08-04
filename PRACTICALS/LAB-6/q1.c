@@ -4,7 +4,6 @@
 // iii ) counting the number of marks scored by the students which are below the average marks, total number of marks which are similar, and frequency of each mark stored in the array.
 
 #include <stdio.h>
-extern int student_array[5]
 min_max(student_array);
 
 int main()
