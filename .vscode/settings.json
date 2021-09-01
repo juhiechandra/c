@@ -16,5 +16,6 @@
         "3.C": "cpp",
         "4.C": "cpp",
         "Q6.C": "cpp"
-    }
+    },
+    "cmake.configureOnOpen": true
 }
